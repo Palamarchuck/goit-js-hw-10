@@ -29,6 +29,7 @@ function onSearch(event) {
         .catch(onFetchError)
         // .finally(() => searchForm.reset());  
     }
+
             
 }
 
@@ -69,4 +70,7 @@ function renderCountryCard(countries) {
         refs.countryInfo.insertAdjacentHTML('beforeend', createMarkupForOne);
         
     }
+    if (searchForm !== countries.name) {
+        return  onFetchError
+    
 }
